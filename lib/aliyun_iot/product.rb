@@ -58,8 +58,7 @@ module AliyunIot
 
     def pub(params = {})
       raise RequestException.new(Exception.new("message MessageContent is empty!")) if params[:MessageContent].nil?
-      # default_params = { Qos: '0' }
-      params.merge!({ Qos: '0' }) if params[:Qos].nil?
+      params[:Qos] = '0' if params[:Qos].nil?
       params[:MessageContent] = Base64.encode64(params[:MessageContent]).chomp
       execute params, 'Pub'
     end
