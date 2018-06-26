@@ -1,3 +1,4 @@
+# -*- encoding: utf-8 -*-
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
@@ -9,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["CooCOccO"]
   spec.email         = ["garrus1118@qq.com"]
 
-  spec.summary       = '阿里云物联网套件ruby sdk'
+  spec.summary       = 'aliyun iot ruby sdk'
   spec.description   = 'Aliyun IoT sdk'
   spec.homepage      = "https://github.com/CooCOccO/aliyun_iot"
   spec.license       = "MIT"
