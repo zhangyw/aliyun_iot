@@ -11,4 +11,5 @@
 .rspec_status
 .gem
 
-/.idea
+.idea
+.idea/.rakeTasks

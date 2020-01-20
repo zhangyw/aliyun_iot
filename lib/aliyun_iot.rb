@@ -23,6 +23,7 @@ class Hash
   end
 end
 module AliyunIot
+  class ParamsError < StandardError; end
 
   class << self
     def configuration
